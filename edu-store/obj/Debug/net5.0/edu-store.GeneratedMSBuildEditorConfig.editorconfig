@@ -7,4 +7,4 @@ build_property.PublishSingleFile =
 build_property.IncludeAllContentForSelfExtract = 
 build_property._SupportedPlatformList = Android,iOS,Linux,macOS,Windows
 build_property.RootNamespace = edu_store
-build_property.ProjectDir = C:\Users\Peter\source\repos\EducationalAppStore\edu-store\
+build_property.ProjectDir = D:\EducationalAppStore\edu-store\

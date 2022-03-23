@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Peter\\source\\repos\\EducationalAppStore\\edu-store\\edu-store.csproj": {}
+    "D:\\EducationalAppStore\\edu-store\\edu-store.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Peter\\source\\repos\\EducationalAppStore\\edu-store\\edu-store.csproj": {
+    "D:\\EducationalAppStore\\edu-store\\edu-store.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Peter\\source\\repos\\EducationalAppStore\\edu-store\\edu-store.csproj",
+        "projectUniqueName": "D:\\EducationalAppStore\\edu-store\\edu-store.csproj",
         "projectName": "edu-store",
-        "projectPath": "C:\\Users\\Peter\\source\\repos\\EducationalAppStore\\edu-store\\edu-store.csproj",
+        "projectPath": "D:\\EducationalAppStore\\edu-store\\edu-store.csproj",
         "packagesPath": "C:\\Users\\Peter\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Peter\\source\\repos\\EducationalAppStore\\edu-store\\obj\\",
+        "outputPath": "D:\\EducationalAppStore\\edu-store\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Peter\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -46,19 +46,37 @@
             },
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[5.0.15, )"
+              "version": "[5.0.12, )"
             },
             "Microsoft.AspNetCore.Identity.UI": {
               "target": "Package",
-              "version": "[5.0.15, )"
+              "version": "[5.0.12, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[5.0.15, )"
+              "version": "[5.0.12, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
-              "version": "[5.0.15, )"
+              "version": "[5.0.12, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[5.0.2, )"
+            },
+            "Microsoft.jQuery.Unobtrusive.Validation": {
+              "target": "Package",
+              "version": "[3.2.12, )"
+            },
+            "jQuery": {
+              "target": "Package",
+              "version": "[3.6.0, )"
+            },
+            "jQuery.Validation": {
+              "target": "Package",
+              "version": "[1.19.3, )"
             }
           },
           "imports": [
