@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "K5diTPgpb5gnjKFKBXfIgBT9ep+YB4u+88DvM/I62T44lEes/8EcsZfxQw5oYKchAJXbCuyGwIT4aRg0mAffbQ==",
+  "dgSpecHash": "bJTNJxVeoRmfPBJmtebn4fUNOY1vb0um2YPGyewaOrS7Cs4h6aBfbBXwhq+GLuwUiEpuoh2v3R3l+RuUABV8Cg==",
   "success": true,
   "projectFilePath": "D:\\EducationalAppStore\\edu-store\\edu-store.csproj",
   "expectedPackageFiles": [
@@ -31,7 +31,7 @@
     "C:\\Users\\Peter\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\5.0.15\\microsoft.entityframeworkcore.analyzers.5.0.15.nupkg.sha512",
     "C:\\Users\\Peter\\.nuget\\packages\\microsoft.entityframeworkcore.design\\5.0.12\\microsoft.entityframeworkcore.design.5.0.12.nupkg.sha512",
     "C:\\Users\\Peter\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\5.0.15\\microsoft.entityframeworkcore.relational.5.0.15.nupkg.sha512",
-    "C:\\Users\\Peter\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\5.0.12\\microsoft.entityframeworkcore.sqlserver.5.0.12.nupkg.sha512",
+    "C:\\Users\\Peter\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\5.0.15\\microsoft.entityframeworkcore.sqlserver.5.0.15.nupkg.sha512",
     "C:\\Users\\Peter\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\5.0.12\\microsoft.entityframeworkcore.tools.5.0.12.nupkg.sha512",
     "C:\\Users\\Peter\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\5.0.0\\microsoft.extensions.caching.abstractions.5.0.0.nupkg.sha512",
     "C:\\Users\\Peter\\.nuget\\packages\\microsoft.extensions.caching.memory\\5.0.0\\microsoft.extensions.caching.memory.5.0.0.nupkg.sha512",
