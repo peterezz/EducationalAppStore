@@ -1,0 +1,12 @@
+E:\repos\EducationalAppStore\EducationalAppStore\App.Logic\bin\Debug\net6.0\App.Logic.deps.json
+E:\repos\EducationalAppStore\EducationalAppStore\App.Logic\bin\Debug\net6.0\App.Logic.dll
+E:\repos\EducationalAppStore\EducationalAppStore\App.Logic\bin\Debug\net6.0\App.Logic.pdb
+E:\repos\EducationalAppStore\EducationalAppStore\App.Logic\obj\Debug\net6.0\App.Logic.csproj.AssemblyReference.cache
+E:\repos\EducationalAppStore\EducationalAppStore\App.Logic\obj\Debug\net6.0\App.Logic.GeneratedMSBuildEditorConfig.editorconfig
+E:\repos\EducationalAppStore\EducationalAppStore\App.Logic\obj\Debug\net6.0\App.Logic.AssemblyInfoInputs.cache
+E:\repos\EducationalAppStore\EducationalAppStore\App.Logic\obj\Debug\net6.0\App.Logic.AssemblyInfo.cs
+E:\repos\EducationalAppStore\EducationalAppStore\App.Logic\obj\Debug\net6.0\App.Logic.csproj.CoreCompileInputs.cache
+E:\repos\EducationalAppStore\EducationalAppStore\App.Logic\obj\Debug\net6.0\App.Logic.dll
+E:\repos\EducationalAppStore\EducationalAppStore\App.Logic\obj\Debug\net6.0\refint\App.Logic.dll
+E:\repos\EducationalAppStore\EducationalAppStore\App.Logic\obj\Debug\net6.0\App.Logic.pdb
+E:\repos\EducationalAppStore\EducationalAppStore\App.Logic\obj\Debug\net6.0\ref\App.Logic.dll

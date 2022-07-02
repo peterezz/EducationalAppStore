@@ -1,4 +1,4 @@
-﻿using DataAccessLayer.Models;
+﻿using App.Core.Models;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -11,10 +11,10 @@ namespace DataAccessLayer.Repository
 {
     public class BaseRepo<TEntity> where TEntity : class
     {
-        private readonly Edu_StoreContext DbContext;
+        private readonly edu_storeContext DbContext;
 
         protected DbSet<TEntity> DbSet;
-        public BaseRepo(Edu_StoreContext context)
+        public BaseRepo(edu_storeContext context)
         {
             DbContext = context;
             DbSet = DbContext.Set<TEntity>();

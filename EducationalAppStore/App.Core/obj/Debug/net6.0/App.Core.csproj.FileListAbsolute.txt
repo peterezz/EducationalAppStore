@@ -1,0 +1,14 @@
+E:\repos\EducationalAppStore\EducationalAppStore\App.Core\bin\Debug\net6.0\App.Core.deps.json
+E:\repos\EducationalAppStore\EducationalAppStore\App.Core\bin\Debug\net6.0\App.Core.runtimeconfig.json
+E:\repos\EducationalAppStore\EducationalAppStore\App.Core\bin\Debug\net6.0\App.Core.dll
+E:\repos\EducationalAppStore\EducationalAppStore\App.Core\bin\Debug\net6.0\App.Core.pdb
+E:\repos\EducationalAppStore\EducationalAppStore\App.Core\obj\Debug\net6.0\App.Core.csproj.AssemblyReference.cache
+E:\repos\EducationalAppStore\EducationalAppStore\App.Core\obj\Debug\net6.0\App.Core.GeneratedMSBuildEditorConfig.editorconfig
+E:\repos\EducationalAppStore\EducationalAppStore\App.Core\obj\Debug\net6.0\App.Core.AssemblyInfoInputs.cache
+E:\repos\EducationalAppStore\EducationalAppStore\App.Core\obj\Debug\net6.0\App.Core.AssemblyInfo.cs
+E:\repos\EducationalAppStore\EducationalAppStore\App.Core\obj\Debug\net6.0\App.Core.csproj.CoreCompileInputs.cache
+E:\repos\EducationalAppStore\EducationalAppStore\App.Core\obj\Debug\net6.0\App.Core.dll
+E:\repos\EducationalAppStore\EducationalAppStore\App.Core\obj\Debug\net6.0\refint\App.Core.dll
+E:\repos\EducationalAppStore\EducationalAppStore\App.Core\obj\Debug\net6.0\App.Core.pdb
+E:\repos\EducationalAppStore\EducationalAppStore\App.Core\obj\Debug\net6.0\App.Core.genruntimeconfig.cache
+E:\repos\EducationalAppStore\EducationalAppStore\App.Core\obj\Debug\net6.0\ref\App.Core.dll

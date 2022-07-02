@@ -68,3 +68,7 @@ E:\repos\EducationalAppStore\EducationalAppStore\App.UI\obj\Debug\net6.0\refint\
 E:\repos\EducationalAppStore\EducationalAppStore\App.UI\obj\Debug\net6.0\App.UI.pdb
 E:\repos\EducationalAppStore\EducationalAppStore\App.UI\obj\Debug\net6.0\App.UI.genruntimeconfig.cache
 E:\repos\EducationalAppStore\EducationalAppStore\App.UI\obj\Debug\net6.0\ref\App.UI.dll
+E:\repos\EducationalAppStore\EducationalAppStore\App.UI\bin\Debug\net6.0\App.Core.dll
+E:\repos\EducationalAppStore\EducationalAppStore\App.UI\bin\Debug\net6.0\App.Logic.dll
+E:\repos\EducationalAppStore\EducationalAppStore\App.UI\bin\Debug\net6.0\App.Core.pdb
+E:\repos\EducationalAppStore\EducationalAppStore\App.UI\bin\Debug\net6.0\App.Logic.pdb
