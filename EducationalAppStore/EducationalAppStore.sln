@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32616.157
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "App.UI", "App.UI\App.UI.csproj", "{133BAA03-61D0-4A72-999C-4A284966BFE7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "App.Core", "App.Core\App.Core.csproj", "{EB37F18A-5F60-4EE4-A563-C46F49ED1633}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "App.Logic", "App.Logic\App.Logic.csproj", "{6B5E04AF-8E4A-4DB4-9C81-0579C009E452}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{133BAA03-61D0-4A72-999C-4A284966BFE7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{133BAA03-61D0-4A72-999C-4A284966BFE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{133BAA03-61D0-4A72-999C-4A284966BFE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{133BAA03-61D0-4A72-999C-4A284966BFE7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB37F18A-5F60-4EE4-A563-C46F49ED1633}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB37F18A-5F60-4EE4-A563-C46F49ED1633}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB37F18A-5F60-4EE4-A563-C46F49ED1633}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB37F18A-5F60-4EE4-A563-C46F49ED1633}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B5E04AF-8E4A-4DB4-9C81-0579C009E452}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B5E04AF-8E4A-4DB4-9C81-0579C009E452}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B5E04AF-8E4A-4DB4-9C81-0579C009E452}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B5E04AF-8E4A-4DB4-9C81-0579C009E452}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F8FBFA39-3FA0-4C21-9CE4-44F6042A757F}
+	EndGlobalSection
+EndGlobal
