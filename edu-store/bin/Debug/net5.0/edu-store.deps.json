@@ -33,8 +33,8 @@
     ".NETCoreApp,Version=v5.0": {
       "edu-store/1.0.0": {
         "dependencies": {
-          "BusinessLogic": "1.0.0",
-          "DataAccessLayer": "1.0.0",
+          "BL": "1.0.0",
+          "DAL": "1.0.0",
           "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": "5.0.15",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "5.0.12",
           "Microsoft.AspNetCore.Identity.UI": "5.0.12",
@@ -1940,27 +1940,24 @@
           "System.Xml.XmlDocument": "4.3.0"
         }
       },
-      "BusinessLogic/1.0.0": {
-        "dependencies": {
-          "DataAccessLayer": "1.0.0"
-        },
+      "BL/1.0.0": {
         "runtime": {
-          "BusinessLogic.dll": {}
+          "BL.dll": {}
         },
         "compile": {
-          "BusinessLogic.dll": {}
+          "BL.dll": {}
         }
       },
-      "DataAccessLayer/1.0.0": {
+      "DAL/1.0.0": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "5.0.15",
           "Microsoft.EntityFrameworkCore.SqlServer": "5.0.15"
         },
         "runtime": {
-          "DataAccessLayer.dll": {}
+          "DAL.dll": {}
         },
         "compile": {
-          "DataAccessLayer.dll": {}
+          "DAL.dll": {}
         }
       },
       "Microsoft.AspNetCore.Antiforgery/5.0.0.0": {
@@ -4579,12 +4576,12 @@
       "path": "system.xml.xmlserializer/4.3.0",
       "hashPath": "system.xml.xmlserializer.4.3.0.nupkg.sha512"
     },
-    "BusinessLogic/1.0.0": {
+    "BL/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "DataAccessLayer/1.0.0": {
+    "DAL/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

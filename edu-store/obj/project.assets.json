@@ -2160,20 +2160,7 @@
           "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
         }
       },
-      "BusinessLogic/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v5.0",
-        "dependencies": {
-          "DataAccessLayer": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/BusinessLogic.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/BusinessLogic.dll": {}
-        }
-      },
-      "DataAccessLayer/1.0.0": {
+      "App.Core/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
@@ -2181,10 +2168,20 @@
           "Microsoft.EntityFrameworkCore.SqlServer": "5.0.15"
         },
         "compile": {
-          "bin/placeholder/DataAccessLayer.dll": {}
+          "bin/placeholder/App.Core.dll": {}
         },
         "runtime": {
-          "bin/placeholder/DataAccessLayer.dll": {}
+          "bin/placeholder/App.Core.dll": {}
+        }
+      },
+      "App.Logic/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/App.Logic.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/App.Logic.dll": {}
         }
       }
     }
@@ -7574,21 +7571,21 @@
         "system.xml.xmlserializer.nuspec"
       ]
     },
-    "BusinessLogic/1.0.0": {
+    "App.Core/1.0.0": {
       "type": "project",
-      "path": "../BusinessLogic/BusinessLogic.csproj",
-      "msbuildProject": "../BusinessLogic/BusinessLogic.csproj"
+      "path": "../DAL/App.Core.csproj",
+      "msbuildProject": "../DAL/App.Core.csproj"
     },
-    "DataAccessLayer/1.0.0": {
+    "App.Logic/1.0.0": {
       "type": "project",
-      "path": "../DataAccessLayer/DataAccessLayer.csproj",
-      "msbuildProject": "../DataAccessLayer/DataAccessLayer.csproj"
+      "path": "../BusinessLogic/App.Logic.csproj",
+      "msbuildProject": "../BusinessLogic/App.Logic.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0": [
-      "BusinessLogic >= 1.0.0",
-      "DataAccessLayer >= 1.0.0",
+      "App.Core >= 1.0.0",
+      "App.Logic >= 1.0.0",
       "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore >= 5.0.15",
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 5.0.12",
       "Microsoft.AspNetCore.Identity.UI >= 5.0.12",
@@ -7601,19 +7598,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Peter\\.nuget\\packages\\": {}
+    "C:\\Users\\hp 2022\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\EducationalAppStore\\edu-store\\edu-store.csproj",
-      "projectName": "edu-store",
-      "projectPath": "D:\\EducationalAppStore\\edu-store\\edu-store.csproj",
-      "packagesPath": "C:\\Users\\Peter\\.nuget\\packages\\",
-      "outputPath": "D:\\EducationalAppStore\\edu-store\\obj\\",
+      "projectUniqueName": "E:\\repos\\EducationalAppStore\\edu-store\\App.UI.csproj",
+      "projectName": "App.UI",
+      "projectPath": "E:\\repos\\EducationalAppStore\\edu-store\\App.UI.csproj",
+      "packagesPath": "C:\\Users\\hp 2022\\.nuget\\packages\\",
+      "outputPath": "E:\\repos\\EducationalAppStore\\edu-store\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Peter\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\hp 2022\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -7627,11 +7624,11 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "D:\\EducationalAppStore\\BusinessLogic\\BusinessLogic.csproj": {
-              "projectPath": "D:\\EducationalAppStore\\BusinessLogic\\BusinessLogic.csproj"
+            "E:\\repos\\EducationalAppStore\\BusinessLogic\\App.Logic.csproj": {
+              "projectPath": "E:\\repos\\EducationalAppStore\\BusinessLogic\\App.Logic.csproj"
             },
-            "D:\\EducationalAppStore\\DataAccessLayer\\DataAccessLayer.csproj": {
-              "projectPath": "D:\\EducationalAppStore\\DataAccessLayer\\DataAccessLayer.csproj"
+            "E:\\repos\\EducationalAppStore\\DAL\\App.Core.csproj": {
+              "projectPath": "E:\\repos\\EducationalAppStore\\DAL\\App.Core.csproj"
             }
           }
         }
@@ -7703,7 +7700,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.406\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
       }
     }
   }

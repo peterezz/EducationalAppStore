@@ -1,5 +1,4 @@
-using BusinessLogic.Mangers;
-using DataAccessLayer.Models;
+using DAL.Models;
 using edu_store.Data;
 using edu_store.Models;
 using Microsoft.AspNetCore.Builder;
@@ -30,7 +29,7 @@ namespace edu_store
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<Edu_StoreContext>(option => option.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+            services.AddDbContext<edu_storeContext>(option => option.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
             services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseSqlServer(
                     Configuration.GetConnectionString("DefaultConnection")));
@@ -41,7 +40,7 @@ namespace edu_store
                 .AddDefaultUI()
                 .AddDefaultTokenProviders();
             services.AddControllersWithViews();
-            services.AddScoped<TestManger>();
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

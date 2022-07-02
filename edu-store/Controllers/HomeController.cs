@@ -1,5 +1,4 @@
-﻿using BusinessLogic.Mangers;
-using DataAccessLayer.Models;
+﻿using DAL.Models;
 using edu_store.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
@@ -14,12 +13,12 @@ namespace edu_store.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
-        private readonly TestManger manger;
+      
 
-        public HomeController(ILogger<HomeController> logger,TestManger manger)
+        public HomeController(ILogger<HomeController> logger)
         {
             _logger = logger;
-            this.manger = manger;
+           
         }
 
         public IActionResult Index()
@@ -42,11 +41,6 @@ namespace edu_store.Controllers
         {
             return View();
         }
-        [HttpPost]
-        public IActionResult test(CourseCategory category)
-        {
-            manger.addTest(category);
-            return View();
-        }
+      
     }
 }

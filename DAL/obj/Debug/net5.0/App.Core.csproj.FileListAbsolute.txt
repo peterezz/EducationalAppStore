@@ -1,0 +1,12 @@
+E:\repos\EducationalAppStore\DAL\bin\Debug\net5.0\App.Core.deps.json
+E:\repos\EducationalAppStore\DAL\bin\Debug\net5.0\App.Core.dll
+E:\repos\EducationalAppStore\DAL\bin\Debug\net5.0\App.Core.pdb
+E:\repos\EducationalAppStore\DAL\obj\Debug\net5.0\App.Core.csproj.AssemblyReference.cache
+E:\repos\EducationalAppStore\DAL\obj\Debug\net5.0\App.Core.GeneratedMSBuildEditorConfig.editorconfig
+E:\repos\EducationalAppStore\DAL\obj\Debug\net5.0\App.Core.AssemblyInfoInputs.cache
+E:\repos\EducationalAppStore\DAL\obj\Debug\net5.0\App.Core.AssemblyInfo.cs
+E:\repos\EducationalAppStore\DAL\obj\Debug\net5.0\App.Core.csproj.CoreCompileInputs.cache
+E:\repos\EducationalAppStore\DAL\obj\Debug\net5.0\App.Core.dll
+E:\repos\EducationalAppStore\DAL\obj\Debug\net5.0\refint\App.Core.dll
+E:\repos\EducationalAppStore\DAL\obj\Debug\net5.0\App.Core.pdb
+E:\repos\EducationalAppStore\DAL\obj\Debug\net5.0\ref\App.Core.dll

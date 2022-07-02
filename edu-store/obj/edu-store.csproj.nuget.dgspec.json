@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\EducationalAppStore\\edu-store\\edu-store.csproj": {}
+    "E:\\repos\\EducationalAppStore\\edu-store\\edu-store.csproj": {}
   },
   "projects": {
-    "D:\\EducationalAppStore\\BusinessLogic\\BusinessLogic.csproj": {
+    "E:\\repos\\EducationalAppStore\\BusinessLogic\\App.Logic.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\EducationalAppStore\\BusinessLogic\\BusinessLogic.csproj",
-        "projectName": "BusinessLogic",
-        "projectPath": "D:\\EducationalAppStore\\BusinessLogic\\BusinessLogic.csproj",
-        "packagesPath": "C:\\Users\\Peter\\.nuget\\packages\\",
-        "outputPath": "D:\\EducationalAppStore\\BusinessLogic\\obj\\",
+        "projectUniqueName": "E:\\repos\\EducationalAppStore\\BusinessLogic\\App.Logic.csproj",
+        "projectName": "App.Logic",
+        "projectPath": "E:\\repos\\EducationalAppStore\\BusinessLogic\\App.Logic.csproj",
+        "packagesPath": "C:\\Users\\hp 2022\\.nuget\\packages\\",
+        "outputPath": "E:\\repos\\EducationalAppStore\\BusinessLogic\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Peter\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\hp 2022\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -27,11 +27,7 @@
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
-            "projectReferences": {
-              "D:\\EducationalAppStore\\DataAccessLayer\\DataAccessLayer.csproj": {
-                "projectPath": "D:\\EducationalAppStore\\DataAccessLayer\\DataAccessLayer.csproj"
-              }
-            }
+            "projectReferences": {}
           }
         },
         "warningProperties": {
@@ -58,21 +54,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.406\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\EducationalAppStore\\DataAccessLayer\\DataAccessLayer.csproj": {
+    "E:\\repos\\EducationalAppStore\\DAL\\App.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\EducationalAppStore\\DataAccessLayer\\DataAccessLayer.csproj",
-        "projectName": "DataAccessLayer",
-        "projectPath": "D:\\EducationalAppStore\\DataAccessLayer\\DataAccessLayer.csproj",
-        "packagesPath": "C:\\Users\\Peter\\.nuget\\packages\\",
-        "outputPath": "D:\\EducationalAppStore\\DataAccessLayer\\obj\\",
+        "projectUniqueName": "E:\\repos\\EducationalAppStore\\DAL\\App.Core.csproj",
+        "projectName": "App.Core",
+        "projectPath": "E:\\repos\\EducationalAppStore\\DAL\\App.Core.csproj",
+        "packagesPath": "C:\\Users\\hp 2022\\.nuget\\packages\\",
+        "outputPath": "E:\\repos\\EducationalAppStore\\DAL\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Peter\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\hp 2022\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -122,21 +118,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.406\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\EducationalAppStore\\edu-store\\edu-store.csproj": {
+    "E:\\repos\\EducationalAppStore\\edu-store\\edu-store.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\EducationalAppStore\\edu-store\\edu-store.csproj",
+        "projectUniqueName": "E:\\repos\\EducationalAppStore\\edu-store\\edu-store.csproj",
         "projectName": "edu-store",
-        "projectPath": "D:\\EducationalAppStore\\edu-store\\edu-store.csproj",
-        "packagesPath": "C:\\Users\\Peter\\.nuget\\packages\\",
-        "outputPath": "D:\\EducationalAppStore\\edu-store\\obj\\",
+        "projectPath": "E:\\repos\\EducationalAppStore\\edu-store\\edu-store.csproj",
+        "packagesPath": "C:\\Users\\hp 2022\\.nuget\\packages\\",
+        "outputPath": "E:\\repos\\EducationalAppStore\\edu-store\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Peter\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\hp 2022\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -150,11 +146,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\EducationalAppStore\\BusinessLogic\\BusinessLogic.csproj": {
-                "projectPath": "D:\\EducationalAppStore\\BusinessLogic\\BusinessLogic.csproj"
+              "E:\\repos\\EducationalAppStore\\BusinessLogic\\App.Logic.csproj": {
+                "projectPath": "E:\\repos\\EducationalAppStore\\BusinessLogic\\App.Logic.csproj"
               },
-              "D:\\EducationalAppStore\\DataAccessLayer\\DataAccessLayer.csproj": {
-                "projectPath": "D:\\EducationalAppStore\\DataAccessLayer\\DataAccessLayer.csproj"
+              "E:\\repos\\EducationalAppStore\\DAL\\App.Core.csproj": {
+                "projectPath": "E:\\repos\\EducationalAppStore\\DAL\\App.Core.csproj"
               }
             }
           }
@@ -226,7 +222,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.406\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
         }
       }
     }

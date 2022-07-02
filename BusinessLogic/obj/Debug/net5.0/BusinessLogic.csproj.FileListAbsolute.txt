@@ -13,3 +13,15 @@ D:\EducationalAppStore\BusinessLogic\obj\Debug\net5.0\BusinessLogic.csproj.CopyC
 D:\EducationalAppStore\BusinessLogic\obj\Debug\net5.0\BusinessLogic.dll
 D:\EducationalAppStore\BusinessLogic\obj\Debug\net5.0\ref\BusinessLogic.dll
 D:\EducationalAppStore\BusinessLogic\obj\Debug\net5.0\BusinessLogic.pdb
+E:\repos\EducationalAppStore\BusinessLogic\obj\Debug\net5.0\BusinessLogic.csproj.AssemblyReference.cache
+E:\repos\EducationalAppStore\BusinessLogic\obj\Debug\net5.0\BusinessLogic.GeneratedMSBuildEditorConfig.editorconfig
+E:\repos\EducationalAppStore\BusinessLogic\obj\Debug\net5.0\BusinessLogic.AssemblyInfoInputs.cache
+E:\repos\EducationalAppStore\BusinessLogic\obj\Debug\net5.0\BusinessLogic.AssemblyInfo.cs
+E:\repos\EducationalAppStore\BusinessLogic\obj\Debug\net5.0\BusinessLogic.csproj.CoreCompileInputs.cache
+E:\repos\EducationalAppStore\BusinessLogic\obj\Debug\net5.0\BusinessLogic.dll
+E:\repos\EducationalAppStore\BusinessLogic\obj\Debug\net5.0\BusinessLogic.pdb
+E:\repos\EducationalAppStore\BusinessLogic\bin\Debug\net5.0\BusinessLogic.deps.json
+E:\repos\EducationalAppStore\BusinessLogic\bin\Debug\net5.0\BusinessLogic.dll
+E:\repos\EducationalAppStore\BusinessLogic\bin\Debug\net5.0\BusinessLogic.pdb
+E:\repos\EducationalAppStore\BusinessLogic\obj\Debug\net5.0\refint\BusinessLogic.dll
+E:\repos\EducationalAppStore\BusinessLogic\obj\Debug\net5.0\ref\BusinessLogic.dll
