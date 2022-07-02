@@ -1,4 +1,5 @@
-﻿using App.Core.Models;
+﻿using App.Core.Domain;
+using App.Core.Models;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;

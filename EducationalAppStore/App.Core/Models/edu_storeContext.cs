@@ -2,12 +2,14 @@
 #nullable disable
 using System;
 using System.Collections.Generic;
+using App.Core.Domain;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
 
 namespace App.Core.Models
 {
-    public partial class edu_storeContext : DbContext
+    public partial class edu_storeContext : IdentityDbContext<ApplicationUser>
     {
         public edu_storeContext()
         {
