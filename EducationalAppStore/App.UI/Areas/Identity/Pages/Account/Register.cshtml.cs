@@ -20,6 +20,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.WebUtilities;
 using Microsoft.Extensions.Logging;
 using System.Net.Mail;
+using App.UI.Configuration;
 
 namespace App.UI.Areas.Identity.Pages.Account
 {
@@ -78,18 +79,22 @@ namespace App.UI.Areas.Identity.Pages.Account
             /// </summary>
             [Required]
             [EmailAddress]
-            [Display(Name = "Email")]
+            [Display(Name = "Email Address")]
             public string Email { get; set; }
             [Required(ErrorMessage ="First name is requred")]
             [StringLength(50,ErrorMessage ="max length is 50 charcters")]
+            [Display(Name ="First Name")]
             public string FirstName { get; set; }
             [Required(ErrorMessage = "Last name is requred")]
             [StringLength(50, ErrorMessage = "max length is 50 charcters")]
+            [Display(Name = "Last Name")]
+
             public string LastName { get; set; }
 
             [Required]
             [StringLength(100, ErrorMessage = "The {0} must be at least {2} and at max {1} characters long.", MinimumLength = 6)]
             [DataType(DataType.Password)]
+
             [Display(Name = "Password")]
             public string Password { get; set; }
 
@@ -99,6 +104,8 @@ namespace App.UI.Areas.Identity.Pages.Account
             public string ConfirmPassword { get; set; }
 
             [Required(ErrorMessage ="photo is requred")]
+            [Display(Name = "Profile Picture")]
+
             public IFormFile Photo { get; set; }
         }
 
@@ -127,7 +134,6 @@ namespace App.UI.Areas.Identity.Pages.Account
                 user.FirstName = Input.FirstName;   
                 user.LastName= Input.LastName;
                 user.Photo = photoname;
-                user.EmailConfirmed = true;
                 await _userStore.SetUserNameAsync(user, new MailAddress(Input.Email).User, CancellationToken.None);
                 await _emailStore.SetEmailAsync(user, Input.Email, CancellationToken.None);
                 var result = await _userManager.CreateAsync(user, Input.Password);
@@ -136,7 +142,7 @@ namespace App.UI.Areas.Identity.Pages.Account
                 {
                    
                     _logger.LogInformation("User created a new account with password.");
-
+                    await _userManager.AddToRoleAsync(user,UserRoles.Student);
                     var userId = await _userManager.GetUserIdAsync(user);
                     var code = await _userManager.GenerateEmailConfirmationTokenAsync(user);
                     code = WebEncoders.Base64UrlEncode(Encoding.UTF8.GetBytes(code));
@@ -149,15 +155,9 @@ namespace App.UI.Areas.Identity.Pages.Account
                     await _emailSender.SendEmailAsync(Input.Email, "Confirm your email",
                         $"Please confirm your account by <a href='{HtmlEncoder.Default.Encode(callbackUrl)}'>clicking here</a>.");
 
-                    if (_userManager.Options.SignIn.RequireConfirmedAccount)
-                    {
+                   
                         return RedirectToPage("RegisterConfirmation", new { email = Input.Email, returnUrl = returnUrl });
-                    }
-                    else
-                    {
-                        await _signInManager.SignInAsync(user, isPersistent: false);
-                        return LocalRedirect(returnUrl);
-                    }
+                  
                 }
                 foreach (var error in result.Errors)
                 {

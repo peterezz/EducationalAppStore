@@ -7,7 +7,7 @@
     <meta name="keywords" content="HTML,CSS,XML,JavaScript">
     <meta name="author" content="Ecology Theme">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eduwise - Education HTML5 Template</title>
+    <title>@ViewData["Title"]</title>
     <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
     <!-- Goole Font -->
     <link href="https://fonts.googleapis.com/css?family=Rubik:400,500,700" rel="stylesheet">
@@ -72,38 +72,39 @@
             </div>
         </div>
     </div>
-
-    <div class="edu_nav">
-        <div class="container">
-            <nav class="navbar navbar-expand-md navbar-light bg-faded">
-                <a class="navbar-brand" href="index-2.html"><img src="/images/logo2.png" alt="logo"></a>
-                <div class="collapse navbar-collapse main-menu" id="navbarSupportedContent">
-                    <ul class="navbar-nav nav lavalamp ml-auto menu">
-                        <li class="nav-item"><a href="#" class="nav-link active">Home</a></li>          
-                        <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
-                        <li class="nav-item"><a href="course.html" class="nav-link">Courses</a>
-                        </li>
-                        <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>                       
-                        <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="mr-auto search_area ">
-                    <ul class="navbar-nav mx-auto">
-                        <li class="nav-item"><i class="search_btn flaticon-magnifier"></i>
-                            <div id="search">
-                                <button type="button" class="close">×</button>
-                                 <form>
-                                     <input type="search" value="" placeholder="Search here...."  required/>
-                                 </form>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </nav><!-- END NAVBAR -->
-        </div> 
-    </div>
-
-            @RenderBody()
+        @if (( !ViewData["Title"].Equals("Confirm email")) && (! ViewData["Title"].Equals("Register confirmation")))
+        {
+            <div class="edu_nav">
+                <div class="container">
+                    <nav class="navbar navbar-expand-md navbar-light bg-faded">
+                        <a class="navbar-brand" href="index-2.html"><img src="/images/logo2.png" alt="logo"></a>
+                        <div class="collapse navbar-collapse main-menu" id="navbarSupportedContent">
+                            <ul class="navbar-nav nav lavalamp ml-auto menu">
+                                <li class="nav-item"><a href="#" class="nav-link active">Home</a></li>          
+                                <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                                <li class="nav-item"><a href="course.html" class="nav-link">Courses</a>
+                                </li>
+                                <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>                       
+                                <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                            </ul>
+                        </div>
+                        <div class="mr-auto search_area ">
+                            <ul class="navbar-nav mx-auto">
+                                <li class="nav-item"><i class="search_btn flaticon-magnifier"></i>
+                                    <div id="search">
+                                        <button type="button" class="close">×</button>
+                                        <form>
+                                            <input type="search" value="" placeholder="Search here...."  required/>
+                                        </form>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav><!-- END NAVBAR -->
+                </div> 
+            </div>
+        }
+        @RenderBody()
 
 
   <!-- Footer -->  
