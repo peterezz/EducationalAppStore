@@ -1,0 +1,62 @@
+﻿@using Microsoft.AspNetCore.Identity
+@using App.Core.Domain;
+@inject SignInManager<ApplicationUser> SignInManager
+@inject UserManager<ApplicationUser> UserManager
+@{
+    if (ViewData.TryGetValue("ParentLayout", out var parentLayout))
+    {
+        Layout = (string)parentLayout;
+    }
+    else
+    {
+        Layout = "/Areas/Identity/Pages/_Layout.cshtml";
+    }
+     var UserData = await UserManager.GetUserAsync(User);
+}
+<style>
+    #link :hover{
+        background-color: #092ace;
+        color:white;
+
+    }
+
+</style>
+<section class="teachers_profile">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4 teacher-detail-left">
+                <div class="teacher_info_wrapper">
+                    <div class="teacger-image">
+                        <img src="/images/team/@UserData.Photo" alt="" class="img-fluid">
+                    </div>
+                    <div class="social_wraper">
+                        <ul class="social-items d-flex list-unstyled">
+                            <li><a href="@UserData.FacebookLink"><i class="fab fa-facebook-f fb-icon"></i></a></li>
+                            <li><a href="@UserData.twitterLink"><i class="fab fa-twitter twitt-icon"></i></a></li>
+                            <li><a href="@UserData.LinckedinLink"><i class="fab fa-linkedin-in link-icon"></i></a></li>
+                            <li><a href="@UserData.InstgramLink"><i class="fab fa-instagram ins-icon"></i></a></li>
+                        </ul>
+                    </div> 
+                    <div class="teacher-skills">
+                        <div class="skill-single" id="link" style="border:1px solid">
+                            <a href="/identity/account/manage/index"><h4 style="text-align:center">My Info</h4> </a>
+                        </div>
+
+                        <div class="skill-single" id="link" style="border:1px solid">
+                            <a href="/identity/account/manage/SetPassword"><h4 style="text-align:center">My Password</h4> </a>
+                        </div>
+
+                        <div class="skill-single" id="link" style="border:1px solid" >
+                            <a href="/identity/account/manage/ChangeContactInfo"><h4 style="text-align:center">Contact Info</h4> </a>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- Ends: .teacher-detail-left -->
+
+
+            @RenderBody()
+
+
+@section Scripts {
+    @RenderSection("Scripts", required: false)
+}

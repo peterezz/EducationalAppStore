@@ -1,0 +1,50 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Profile";
+     
+}
+
+
+            <div class="col-sm-8 teacher-detail-right">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="teacher-contact">
+                            <h2>My Info</h2>
+                            <form method="post"  enctype="multipart/form-data">
+                                <div asp-validation-summary="ModelOnly" style="color:red"></div>
+                                
+                                <label asp-for="Username"></label>
+                                <input type="text"   asp-for="Username" readonly="readonly" disabled="disabled">
+                                
+                                <label asp-for="Input.FirstName" style="margin-top:10px"></label>
+                                <input type="text" asp-for="Input.FirstName" >
+                                <span asp-validation-for="Input.FirstName" class="text-danger"></span>
+
+                                <label asp-for="Input.LastName" style="margin-top:10px"></label>
+                                <input type="text" asp-for="Input.LastName" >
+                                 <span asp-validation-for="Input.LastName" class="text-danger"></span>
+
+                                 <label asp-for="Input.PhoneNumber" style="margin-top:10px"></label>
+                                <input type="text" asp-for="Input.PhoneNumber" >
+                                <span asp-validation-for="Input.PhoneNumber" class="text-danger"></span>
+
+                                 <label asp-for="Input.ProfilePicture" style="margin-top:10px"></label>
+                                <input type="file" asp-for="Input.ProfilePicture" >
+                                <span asp-validation-for="Input.ProfilePicture" class="text-danger"></span>
+
+                                <button type="submit" style="margin-top:10px">Update Info</button>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+            </div><!-- Ends: .teacher-detail-right -->
+        </div>
+    </div>
+</section><!-- Ends: .teacher-details-wrapper -->
+
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

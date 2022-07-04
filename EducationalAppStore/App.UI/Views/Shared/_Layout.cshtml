@@ -1,4 +1,8 @@
-﻿<!doctype html>
+﻿@using Microsoft.AspNetCore.Identity
+@using App.Core.Domain;
+@inject SignInManager<ApplicationUser> SignInManager
+@inject UserManager<ApplicationUser> UserManager
+<!doctype html>
 <html lang="en">
 <head>
     <!-- Required meta tags -->
@@ -58,26 +62,54 @@
         					<ul class="list-unstyled">
                                 <li><i class="flaticon-phone-receiver"></i>(+20) 01206288674</li>
                                 <li><i class="flaticon-mail-black-envelope-symbol"></i>peterezzat97@gmail.com</li>
-        					</ul>                    
-                        </div>
+        					</ul> 
+                     </div>
+                                   
                         <div class="login_info">
                              <ul class="d-flex">
+                                 @if (SignInManager.IsSignedIn(User))
+                                 {
+                                     <li class="nav-item"><a asp-area="Identity" asp-page="/Account/Manage/Index" style="margin-top:9px" class="nav-link sign-in js-modal-show"><i class="flaticon-user-male-black-shape-with-plus-sign"></i> @User.Identity?.Name</a></li>
+
+                              
+                                     <li class="nav-item">
+                                         <form  class="form-inline" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })">
+                                             <button  type="submit" class="nav-link btn btn-link text-white">Logout</button>
+                                         </form>
+                                     </li>
+                                 }
+                                 else
+                                 {
                                 <li class="nav-item"><a href="identity/account/register" class="nav-link sign-in js-modal-show"><i class="flaticon-user-male-black-shape-with-plus-sign"></i>Sign Up</a></li>
                                 <li class="nav-item"><a href="identity/account/login" class="nav-link join_now js-modal-show"><i class="flaticon-padlock"></i>Log In</a></li>
+
+                                 }
+                            
                             </ul>
                             <a href="#" title="" class="apply_btn">Apply Now</a>
                         </div>
+
                     </div>
                 </div>
+
             </div>
         </div>
     </div>
-        @if (( !ViewData["Title"].Equals("Confirm email")) && (! ViewData["Title"].Equals("Register confirmation")))
+
+        @if (
+         !ViewData["Title"].Equals("Confirm email") && 
+         !ViewData["Title"].Equals("Register confirmation") &&
+         !ViewData["Title"].Equals("Forgot your password") &&
+         !ViewData["Title"].Equals("Reset password") && 
+         !ViewData["Title"].Equals("Reset password confirmation") &&        
+         !ViewData["Title"].Equals("Profile") &&
+         !ViewData["Title"].Equals("Change password")
+        )
         {
             <div class="edu_nav">
                 <div class="container">
                     <nav class="navbar navbar-expand-md navbar-light bg-faded">
-                        <a class="navbar-brand" href="index-2.html"><img src="/images/logo2.png" alt="logo"></a>
+                        <a class="navbar-brand" href="/"><img src="/images/logo2.png" alt="logo"></a>
                         <div class="collapse navbar-collapse main-menu" id="navbarSupportedContent">
                             <ul class="navbar-nav nav lavalamp ml-auto menu">
                                 <li class="nav-item"><a href="#" class="nav-link active">Home</a></li>          
@@ -114,7 +146,7 @@
             <div class="row">
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="footer_single_col footer_intro">
-                        <img src="/images/logo2.png" alt="" class="f_logo">
+                        <a href="/"><img src="/images/logo2.png" alt="" class="f_logo"></a>
                         <p>Ante amet vitae vulputate odio nulla vel pretium pulvinar aenean. Rhoncus eget adipiscing etiam arcu. Ultricies justo ipsum nec amet.</p>
                     </div>
                 </div>
