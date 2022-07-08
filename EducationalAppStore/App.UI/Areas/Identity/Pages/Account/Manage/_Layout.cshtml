@@ -31,24 +31,67 @@
                     </div>
                     <div class="social_wraper">
                         <ul class="social-items d-flex list-unstyled">
-                            <li><a href="@UserData.FacebookLink"><i class="fab fa-facebook-f fb-icon"></i></a></li>
-                            <li><a href="@UserData.twitterLink"><i class="fab fa-twitter twitt-icon"></i></a></li>
-                            <li><a href="@UserData.LinckedinLink"><i class="fab fa-linkedin-in link-icon"></i></a></li>
-                            <li><a href="@UserData.InstgramLink"><i class="fab fa-instagram ins-icon"></i></a></li>
+                            @if(!string.IsNullOrEmpty(UserData.FacebookLink))
+                            {
+                                <li><a href="@UserData.FacebookLink"><i class="fab fa-facebook-f fb-icon"></i></a></li>
+                            }
+                             @if(!string.IsNullOrEmpty(UserData.twitterLink))
+                            {                           
+                                <li><a href="@UserData.twitterLink"><i class="fab fa-twitter twitt-icon"></i></a></li>
+                            }
+                             @if(!string.IsNullOrEmpty(UserData.LinckedinLink))
+                            {                                   
+                                <li><a href="@UserData.LinckedinLink"><i class="fab fa-linkedin-in link-icon"></i></a></li>
+                    
+                            }
+                             @if(!string.IsNullOrEmpty(UserData.InstgramLink))
+                            {                                   
+                               <li><a href="@UserData.InstgramLink"><i class="fab fa-instagram ins-icon"></i></a></li>
+
+                            }
                         </ul>
                     </div> 
                     <div class="teacher-skills">
+                        @if(ViewData["Title"].Equals("Profile"))
+                        {
+                        <div class="skill-single"  style="border:1px solid;background-color:black">
+                            <a href="#"><h4 style="text-align:center;color:white">My Info</h4> </a>
+                        </div>                               
+                        }else
+                        {
                         <div class="skill-single" id="link" style="border:1px solid">
                             <a href="/identity/account/manage/index"><h4 style="text-align:center">My Info</h4> </a>
-                        </div>
+                        </div>                            
+                        }
 
+                        @if(ViewData["Title"].Equals("Change password"))
+                        {
+                        <div class="skill-single"  style="border:1px solid;background-color:black">
+                            <a href="#"><h4 style="text-align:center;color:white">My Password</h4> </a>
+                        </div>                            
+                        }else
+                        {
                         <div class="skill-single" id="link" style="border:1px solid">
                             <a href="/identity/account/manage/SetPassword"><h4 style="text-align:center">My Password</h4> </a>
-                        </div>
+                        </div>                            
+                        }
 
+
+
+                        @if(ViewData["Title"].Equals("Change contact info"))
+                        {
+                       <div class="skill-single" style="border:1px solid;background-color:black" >
+                            <a href="#"><h4 style="text-align:center;color:white">My Contact Info</h4> </a>
+                        </div>        
+                        }else
+                        {
                         <div class="skill-single" id="link" style="border:1px solid" >
-                            <a href="/identity/account/manage/ChangeContactInfo"><h4 style="text-align:center">Contact Info</h4> </a>
-                        </div>
+                            <a href="/identity/account/manage/ChangeContactInfo"><h4 style="text-align:center">My Contact Info</h4> </a>
+                        </div>                            
+                        }
+                          <div class="skill-single" id="link" style="border:1px solid" >
+                            <a href="/"><h4 style="text-align:center">Home</h4> </a>
+                        </div>            
                     </div>
                 </div>
             </div><!-- Ends: .teacher-detail-left -->

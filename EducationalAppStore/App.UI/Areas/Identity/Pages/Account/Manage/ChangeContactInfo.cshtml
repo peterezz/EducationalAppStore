@@ -1,4 +1,46 @@
 ﻿@page
 @model App.UI.Areas.Identity.Pages.Account.Manage.ChangeContactInfoModel
 @{
+	ViewData["Title"]="Change contact info";
+
+}
+
+ <div class="col-sm-8 teacher-detail-right">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="teacher-contact">
+                            <h2>My Contact Info</h2>
+                            <form method="post"  enctype="multipart/form-data">
+                                <div asp-validation-summary="ModelOnly" style="color:red"></div>
+                                
+                               <label asp-for="Input.FacebookLink" style="margin-top:10px"></label>
+                                <input type="text" asp-for="Input.FacebookLink" >
+                                <span asp-validation-for="Input.FacebookLink" class="text-danger"></span>
+                                
+                                <label asp-for="Input.TwitterLink" style="margin-top:10px"></label>
+                                <input type="text" asp-for="Input.TwitterLink" >
+                                <span asp-validation-for="Input.TwitterLink" class="text-danger"></span>
+
+                                <label asp-for="Input.LinkedinLink" style="margin-top:10px"></label>
+                                <input type="text" asp-for="Input.LinkedinLink" >
+                                 <span asp-validation-for="Input.LinkedinLink" class="text-danger"></span>
+
+                                  <label asp-for="Input.InstgramLink" style="margin-top:10px"></label>
+                                <input type="text" asp-for="Input.InstgramLink" >
+                                 <span asp-validation-for="Input.InstgramLink" class="text-danger"></span>
+
+                                
+
+                                <button type="submit" style="margin-top:10px">Update Contact Info</button>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+            </div><!-- Ends: .teacher-detail-right -->
+        </div>
+    </div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
 }
