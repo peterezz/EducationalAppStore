@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "F/Ykjd6wvYfZH4Ptsy3CRy87ldqVrgU7O+2eznXzWq8=",
+  "Hash": "vxVv1BOYPMoo5dL0L4rn712lKuPeGsbd/rLQhghWsdI=",
   "Source": "App.UI",
   "BasePath": "_content/App.UI",
   "Mode": "Default",
@@ -2956,6 +2956,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\logo2.png"
+    },
+    {
+      "Identity": "E:\\repos\\EducationalAppStore\\EducationalAppStore\\App.UI\\wwwroot\\images\\logo3.png",
+      "SourceId": "App.UI",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\repos\\EducationalAppStore\\EducationalAppStore\\App.UI\\wwwroot\\",
+      "BasePath": "_content/App.UI",
+      "RelativePath": "images/logo3.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\logo3.png"
     },
     {
       "Identity": "E:\\repos\\EducationalAppStore\\EducationalAppStore\\App.UI\\wwwroot\\images\\logos\\logo-1.png",

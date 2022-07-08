@@ -54,12 +54,18 @@ border-radius:15px
     </style>
 </head>
 <body>
-<header class="header_tow">
+     
+    @{
+        string css = string.IsNullOrEmpty(ViewBag.CssFile) ? "header_tow" : ViewBag.CssFile;
+        var logo = css.Contains("header_inner") ? "logo3.png" : "logo2.png";
+
+        }
+<header class="@css">
 <!-- Preloader -->
 <div id="preloader">
     <div id="status">&nbsp;</div>
-</div>    
-    <div class="header_top">
+</div> 
+    <div class="header_top @css">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-sm-12 col-lg-12">
@@ -118,11 +124,12 @@ border-radius:15px
             <div class="edu_nav">
                 <div class="container">
                     <nav class="navbar navbar-expand-md navbar-light bg-faded">
-                        <a class="navbar-brand" href="/"><img src="/images/logo2.png" alt="logo"></a>
+                       
+                        <a class="navbar-brand" href="/"><img src="/images/@logo" alt="logo"></a>
                         <div class="collapse navbar-collapse main-menu" id="navbarSupportedContent">
                             <ul class="navbar-nav nav lavalamp ml-auto menu">
-                                <li class="nav-item"><a href="#" class="nav-link active">Home</a></li>          
-                                <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                                <li class="nav-item"><a href="/" class="nav-link active">Home</a></li>          
+                                <li class="nav-item"><a  href="/about" class="nav-link">About</a></li>
                                 <li class="nav-item"><a href="course.html" class="nav-link">Courses</a>
                                 </li>
                                 <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>                       
